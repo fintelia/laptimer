@@ -19,14 +19,14 @@ pub fn println<'a>(s: &'a str) {
             elapsed = Duration::from_secs(0);
         }
     }
-    println!("[{:?}]: {}", elapsed, s);
+    println!("[{:.3}ms]: {}", elapsed.as_nanos() as f64 * 1e-6, s);
 }
 
 #[cfg(test)]
 mod tests {
     #[test]
     fn it_works() {
-        let result = 2 + 2;
-        assert_eq!(result, 4);
+        crate::println("A");
+        crate::println("B");
     }
 }
