@@ -12,7 +12,7 @@ pub fn println<'a>(s: &'a str) {
     match *start {
         Some(ref mut instant) => {
             elapsed = instant.elapsed();
-            instant.checked_add(elapsed);
+            *instant = instant.checked_add(elapsed).unwrap();
         }
         None => {
             *start = Some(Instant::now());
