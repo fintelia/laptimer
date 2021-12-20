@@ -2,8 +2,10 @@
 name = "laptimer"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+author = "Jonathan Behrens <fintelia@gmail.com>"
+repository = "https://github.com/fintelia/laptimer"
+readme = "README.md"
+description = "Simple crate to print the time spent between different points in a program."
 
 [dependencies]
 lazy_static = "1.4.0"
