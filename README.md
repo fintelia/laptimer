@@ -1,6 +1,6 @@
 # laptimer
 
-A simple Rust crate to print the time between different points in a program:
+A simple Rust crate to print the time between different points in a program. Each call to `print!` indicates the amount of time elapsed since the previous call:
 
 ```rust
 laptimer::print!(); 
